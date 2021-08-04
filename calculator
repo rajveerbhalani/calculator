@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	char i;
+	int x,y;
+	float X;
+	printf("WELCOME TO RAJVEER'S CALCULATER");
+	printf("\na. ADDITION");
+	printf("\nb. SUBTRACTION");
+	printf("\nc. MULTIPLICATION");
+	printf("\nd. DIVISION");
+	printf("\n\n\nENTER THE CHARACTER FOR THE FUNCTION WHICH YOU WANT TO PERFORM:-");
+	scanf("%c",&i);
+	switch(i)
+	{ 
+	case 'a' :  printf("ENTER VALUE OF TWO NUMBERS WHICH NEEDS TO BE ADDED");
+	          scanf("%d%d",&x,&y);
+	          X =  x + y;
+	         printf("THE result of %d AND %d is=%f",x , y , X);
+	          break;
+    case 'b' :  printf("ENTER VALUE OF TWO NUMBERS WHICH NEEDS TO BE SUBTRACTED");
+	          scanf("%d%d",&x,&y);
+	          	printf("THE result of %d AND %d is=%f",x , y , X);
+	          X =  x - y;
+			  break;	          
+   case 'c' :  printf("ENTER VALUE OF TWO NUMBERS WHICH NEEDS TO BE MULTIPLIED");
+	          scanf("%d%d",&x,&y);
+	          X =  x * y;
+	        printf("THE result of %d AND %d is=%f",x , y , X);
+	          break;
+  case 'd' :  printf("ENTER VALUE OF TWO NUMBERS WHICH NEEDS TO BE DIVISION");
+	          scanf("%d%d",&x,&y);
+	          X =  x % y;
+	          	printf("THE result of %d AND %d is=%f",x , y , X);
+	          break;
+   default: printf("YOU CHOOSE YOU A INVALID OPERATION");
+	}
+	return 0;
+}
